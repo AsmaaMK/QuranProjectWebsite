@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Almarai', sans-serif;
+}
+
+body {
+    margin: 0;
+    
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-rows: 80px auto auto;
+    justify-items: center;
+}
+
+.loginbox {
+    grid-row: 2 / 3;
+    justify-items: center;
+    padding: 50px 0;
+}
+
+.aboutdiv {
+    grid-row: 2 / 3;
+    justify-items: center;
+    padding: 50px 0;
+}
+
+/********* navigation bar **********/
+.navbar {
+    justify-content: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 0 0 10px 0;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    background-color: white;
+    position: fixed;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: flex;
+}
+
+.navdiv
+{
+    padding: 15px 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #576574;
+    text-align: center;
+    font-size: 40px;
+}
+
+.active {
+    border-bottom: 10px solid #10ac84;
+    border-radius: 10px;
+}
+
+.active a {
+    color: #10ac84;
+}
+
+.navdiv:hover {
+    background-color: #e7e7e7;
+}
+
+/********** project logo *************/
+.imgcontainer {
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.Imgcontainer {
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.avatar {
+    width: 50%;
+}
+
+.Avatar {
+    width: 50%;
+}
+
+/********************************/
+
+/*The description of the quran project in about us page*/
+.paragraph {
+    padding: 40px;
+    margin: 6% 5%;
+    text-align: center;
+    color:  #576574;
+    font-size: 30px;
+    border: #10ac84 solid 5px;
+    border-radius: 20px;
+}
+
+span {
+    color: #10ac84;
+}
+
+/******** login and signup form ********/
+form {
+    text-align: center;
+}
+
+.inputBox {
+    font-size: 50px;
+    color: #576574;
+    width: 90%;
+    padding: 30px;
+    margin: 40px;
+    border: 0px;
+    outline:none;
+    background-color: #e7e7e7;  
+    border-right: #10ac84 solid 10px;
+    border-radius: 5px;
+}
+
+.inputBox:focus {
+    border-right: #576574 solid 10px;
+    box-shadow: 0 0 2px #000000;
+}
+
+input[type="submit"] {
+    font-size: 50px;
+    width: 90%;
+    padding: 20px;
+    margin: 40px;
+    border: 0px;
+    background-color: #10ac84;
+    color: white;
+    border-radius: 70px;
+    outline:none;  
+}
+
+input[type="submit"]:hover {
+    opacity: 85%;
+}
+
+::placeholder {
+    color: #576574;
+}
+
+/*********** checkbox style ***********/
+.checklabel {
+    color: #576574;
+    text-align: center;
+    padding: 10px;
+    margin-left: 30px;
+    position: relative;
+    cursor: pointer;
+    font-size: 40px;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checklabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 17px;
+    left: 149px;
+    height: 40px;
+    width: 40px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checklabel:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checklabel input:checked ~ .checkmark {
+    background-color: #10ac84;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checklabel input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checklabel .checkmark:after {
+    left: 12px;
+    top: 5px;
+    width: 10px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/******************************/
+/**** dropdown menue style ****/
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color: #576574;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+.active.dropbtn {
+    color: #10ac84;
+    border-bottom: 10px solid #10ac84;
+    border-radius: 10px;
+}
+
+.dropbtn:hover {
+    background-color: #e7e7e7;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn:focus {
+    outline: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 12px 50px 12px 225px;
+  font-size: 35px;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/******* media queries ************/
+
+@media screen and (min-width: 1000px) {
+
+    .navdiv {
+        padding: 10px 15px;
+    }
+
+    a {
+        font-size: 24px;
+    }
+
+    .active {
+        border-bottom: 5px solid #10ac84;
+        border-radius: 5px;
+    }
+
+    .dropbtn {
+        font-size: 24px;
+        padding: 10px 15px;
+    }
+
+    .active.dropbtn {
+        border-bottom: 5px solid #10ac84;
+        border-radius: 5px;
+    }
+
+    .dropdown-content a {
+        padding: 15px 20px 12px 145px;
+        font-size: 20px;
+    }
+
+    /********** project logo *************/
+    .imgcontainer {
+        padding: 0 15%;
+    }
+
+    img.avatar {
+        width: 50%;
+    }
+
+    input[type="submit"] {
+        font-size: 24px;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .inputBox {
+        font-size: 24px;
+        padding: 10px;
+        margin: 15px;
+        border-right: #10ac84 solid 5px;
+    }
+
+    .inputBox:focus {
+        border-right: #576574 solid 5px;
+    }
+
+    .small {
+        font-size: 22px;
+    }
+
+    form {
+        max-width: 500px;
+    }
+
+/******************************************/
+    .checklabel {
+        margin-left: 0;
+        font-size: 22px;
+    }
+
+    .checkmark {
+        top: 17px;
+        left: 83px;
+        height: 22px;
+        width: 22px;
+    }
+
+    .checklabel .checkmark:after {
+        left: 6.5px;
+        top: 2px;
+        width: 5.5px;
+        height: 10.5px;
+        border-width: 0 3.5px 3.5px 0;
+    }
+
+    .loginbox {
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        justify-items: center;
+        max-width: 500px;
+        border-radius: 20px;
+        background-color: white;
+        margin: 0;
+    }
+
+    .aboutdiv {
+        grid-row: 2 / 3;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        justify-items: center;
+        background-color: rgb(255, 255, 255, 0.7);
+        padding: 30px;
+        margin: 0 20% 30px;
+    }
+
+    .Imgcontainer {
+        padding: 0 30%;
+        text-align: center;
+    }
+    
+    .paragraph {
+        border: 0;
+        padding: 0;
+        margin: 30px;
+        font-size: 24px;
+    }
+
+    body {
+        background-image: url("img/main-bg1.jpg"); 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-attachment: fixed ;
+    }
+
+}
