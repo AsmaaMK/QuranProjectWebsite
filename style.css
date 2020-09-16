@@ -110,8 +110,16 @@ form {
 
 .title {
     color: #10ac84;
-    font-size: 26px;
-    margin: 25px 0 10px 0;
+    font-size: 4vw;
+    width: auto;
+    margin: 30px 0 0 0;
+    align-content: center;
+}
+
+.line {
+    width: 90%;
+    margin: 20px auto 10px auto;
+    border-bottom: 3px solid #10ac84;
 }
 
 .inputBox {
@@ -164,7 +172,7 @@ select {
     border-radius: 12px;
     appearance: none;
 }
-
+/*
 .select-arrow {
 	border-top: 15px solid #10ac84;
     border-left: 15px solid transparent;
@@ -199,11 +207,7 @@ select {
 .s5 {
     top: 1420px;
     right: 871px;
-}
-
-legend {
-    border: none;
-}
+}*/
 
 option {
     font-size: 16px;
