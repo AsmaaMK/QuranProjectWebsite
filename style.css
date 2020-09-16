@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    
+    line-height : 1.7;
 }
 
 .mainContainer {
@@ -50,7 +50,7 @@ a {
     text-decoration: none;
     color: #576574;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .active {
@@ -93,9 +93,10 @@ a {
     margin: 6% 5%;
     text-align: center;
     color:  #576574;
-    font-size: 30px;
+    font-size: 25px;
     border: #10ac84 solid 5px;
     border-radius: 20px;
+    
 }
 
 span {
@@ -108,16 +109,16 @@ form {
 }
 
 .inputBox {
-    font-size: 50px;
+    font-size: 40px;
     color: #576574;
     width: 90%;
-    padding: 30px;
-    margin: 40px;
+    padding: 20px;
+    margin: 25px;
     border: 0px;
     outline:none;
     background-color: #e7e7e7;  
     border-right: #10ac84 solid 10px;
-    border-radius: 5px;
+    border-radius: 12px;
 }
 
 .inputBox:focus {
@@ -125,11 +126,70 @@ form {
     box-shadow: 0 0 2px #000000;
 }
 
+.FN, .LN {
+    width: 42%;
+}
+
+.Label {
+    font-size: 40px;
+    color: #576574;
+    padding: 20px 20px 20px 740px;
+    background-color: #e7e7e7;
+    border-right: #10ac84 solid 10px;
+    border-radius: 12px;
+    margin: 25px;
+    width: 90%;
+    display: inline-block;
+    position: relative;
+}
+
+select {
+    width: 862px;
+    position: absolute;
+    top: 306px;
+    left: 60px;
+    background: none;
+    font-size: 40px;
+    color: #576574;
+    padding: 20px;
+    outline: none;
+    border: none;
+    appearance: none;
+}
+
+select:focus {
+    min-width: 862px;
+    width: auto;
+}
+
+.select-arrow {
+	border-top: 15px solid #10ac84;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 355px;
+    right: 871px;
+    width: 20px;
+    height: 20px;
+    z-index: 20;
+}
+
+option {
+    font-size: 16px;
+    border: none;
+    color: #576574;
+}
+
+option:hover {
+    background-color: #f1f1f1;
+}
+
 input[type="submit"] {
-    font-size: 50px;
+    font-size: 40px;
     width: 90%;
     padding: 20px;
-    margin: 40px;
+    margin: 25px;
     border: 0px;
     background-color: #10ac84;
     color: white;
@@ -153,7 +213,7 @@ input[type="submit"]:hover {
     margin-left: 30px;
     position: relative;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 35px;
     user-select: none;
 }
 
@@ -170,7 +230,7 @@ input[type="submit"]:hover {
 .checkmark {
     position: absolute;
     top: 17px;
-    left: 149px;
+    left: 132px;
     height: 40px;
     width: 40px;
     background-color: #eee;
@@ -217,7 +277,7 @@ input[type="submit"]:hover {
 .dropbtn {
     background-color: white;
     color: #576574;
-    font-size: 40px;
+    font-size: 35px;
     border: none;
     cursor: pointer;
     padding: 15px 30px;
@@ -255,8 +315,8 @@ input[type="submit"]:hover {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  padding: 12px 50px 12px 225px;
-  font-size: 35px;
+  padding: 12px 50px 12px 204px;
+  font-size: 30px;
   display: block;
 }
 
@@ -279,7 +339,7 @@ input[type="submit"]:hover {
     }
 
     a {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .active {
@@ -288,7 +348,7 @@ input[type="submit"]:hover {
     }
 
     .dropbtn {
-        font-size: 24px;
+        font-size: 20px;
         padding: 10px 15px;
     }
 
@@ -298,13 +358,14 @@ input[type="submit"]:hover {
     }
 
     .dropdown-content a {
-        padding: 15px 20px 12px 145px;
-        font-size: 20px;
+        padding: 15px 20px 12px 127px;
+        font-size: 15px;
     }
 
     /********** project logo *************/
     .imgcontainer {
-        padding: 0 15%;
+        padding: 0 20%;
+        margin-bottom: 10px;
     }
 
     img.avatar {
@@ -312,16 +373,17 @@ input[type="submit"]:hover {
     }
 
     input[type="submit"] {
-        font-size: 24px;
-        padding: 10px;
-        margin: 15px;
+        font-size: 20px;
+        padding: 7px;
+        margin: 10px 15PX;
     }
 
     .inputBox {
-        font-size: 24px;
+        font-size: 20px;
         padding: 10px;
-        margin: 15px;
+        margin: 10px 15PX;
         border-right: #10ac84 solid 5px;
+        border-radius: 5px;
     }
 
     .inputBox:focus {
@@ -329,7 +391,7 @@ input[type="submit"]:hover {
     }
 
     .small {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     form {
@@ -339,28 +401,28 @@ input[type="submit"]:hover {
 /******************************************/
     .checklabel {
         margin-left: 0;
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .checkmark {
-        top: 17px;
-        left: 83px;
-        height: 22px;
-        width: 22px;
+        top: 11px;
+        left: 71px;
+        height: 21px;
+        width: 21px;
     }
 
     .checklabel .checkmark:after {
         left: 6.5px;
         top: 2px;
-        width: 5.5px;
-        height: 10.5px;
-        border-width: 0 3.5px 3.5px 0;
+        width: 4.5px;
+        height: 9.5px;
+        border-width: 0 3.3px 3.3px 0;
     }
 
     .loginbox {
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         justify-items: center;
-        max-width: 500px;
+        max-width: 450px;
         border-radius: 20px;
         background-color: white;
         margin: 0;
@@ -372,11 +434,11 @@ input[type="submit"]:hover {
         justify-items: center;
         background-color: rgb(255, 255, 255, 0.7);
         padding: 30px;
-        margin: 0 20% 30px;
+        margin: 0 10% 3% 10% ;
     }
 
     .Imgcontainer {
-        padding: 0 30%;
+        padding: 0 35%;
         text-align: center;
     }
     
@@ -384,7 +446,7 @@ input[type="submit"]:hover {
         border: 0;
         padding: 0;
         margin: 30px;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     body {
