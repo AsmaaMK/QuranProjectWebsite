@@ -112,7 +112,7 @@ form {
     font-size: 40px;
     color: #576574;
     width: 90%;
-    padding: 20px;
+    padding: 30px;
     margin: 25px;
     border: 0px;
     outline:none;
@@ -121,7 +121,7 @@ form {
     border-radius: 12px;
 }
 
-.inputBox:focus {
+.inputBox:focus, select:focus {
     border-right: #576574 solid 10px;
     box-shadow: 0 0 2px #000000;
 }
@@ -144,22 +144,19 @@ form {
 }
 
 select {
-    width: 862px;
-    position: absolute;
-    top: 306px;
-    left: 60px;
-    background: none;
+    width: 90%;
+    padding: 30px;
+    background-color: #e7e7e7;
+    border-right: #10ac84 solid 10px;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    margin: 25px;
     font-size: 40px;
     color: #576574;
-    padding: 20px;
     outline: none;
-    border: none;
+    border-radius: 12px;
     appearance: none;
-}
-
-select:focus {
-    min-width: 862px;
-    width: auto;
 }
 
 .select-arrow {
@@ -188,7 +185,7 @@ option:hover {
 input[type="submit"] {
     font-size: 40px;
     width: 90%;
-    padding: 20px;
+    padding: 30px;
     margin: 25px;
     border: 0px;
     background-color: #10ac84;
