@@ -108,6 +108,12 @@ form {
     text-align: center;
 }
 
+.title {
+    color: #10ac84;
+    font-size: 26px;
+    margin: 25px 0 10px 0;
+}
+
 .inputBox {
     font-size: 40px;
     color: #576574;
@@ -165,11 +171,38 @@ select {
     border-right: 15px solid transparent;
     cursor: pointer;
     position: absolute;
-    top: 355px;
-    right: 871px;
     width: 20px;
     height: 20px;
     z-index: 20;
+}
+
+.s1 {
+    top: 463px;
+    right: 871px;
+}
+
+.s2 {
+    top: 639px;
+    right: 871px;
+}
+
+.s3 {
+    top: 804px;
+    right: 871px;
+}
+
+.s4 {
+    top: 1252px;
+    right: 871px;
+}
+
+.s5 {
+    top: 1420px;
+    right: 871px;
+}
+
+legend {
+    border: none;
 }
 
 option {
