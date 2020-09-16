@@ -277,7 +277,7 @@ input[type="submit"]:hover {
     font-size: 35px;
     border: none;
     cursor: pointer;
-    padding: 20px 30px;
+    padding: 22px 30px;
 }
 
 .active.dropbtn {
