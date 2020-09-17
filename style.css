@@ -172,7 +172,7 @@ select {
     border-radius: 12px;
     appearance: none;
 }
-/*
+
 .select-arrow {
 	border-top: 15px solid #10ac84;
     border-left: 15px solid transparent;
@@ -182,32 +182,9 @@ select {
     width: 20px;
     height: 20px;
     z-index: 20;
+    margin-top: 8%;
+    margin-right: 88%;
 }
-
-.s1 {
-    top: 463px;
-    right: 871px;
-}
-
-.s2 {
-    top: 639px;
-    right: 871px;
-}
-
-.s3 {
-    top: 804px;
-    right: 871px;
-}
-
-.s4 {
-    top: 1252px;
-    right: 871px;
-}
-
-.s5 {
-    top: 1420px;
-    right: 871px;
-}*/
 
 option {
     font-size: 16px;
