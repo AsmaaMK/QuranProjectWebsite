@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <div class="loginbox">
+        <div class="signupBox">
             <form>
                 <p class="title">بيانات شخصية</p>
                 <div class="line"></div>
@@ -96,7 +96,12 @@
                 <p class="title">بيانات الحفظ والتسميع</p>
                 <div class="line"></div>
                 <div class="savingData">
-                    
+                    <input class="inputBox" type="text" placeholder="كم كان عمرك عندما ختمتي حفظ القرآن">
+                    <label class="Label">ارفقي الاجازات التي حصلتي عليها</label>
+
+                    <input type="button" id="loadFileXml" value="ادراج ملف" onclick="document.getElementById('file').click();">
+                    <input type="file" style="display:none;" id="file" name="file" multiple>
+                    <input class="inputBox" type="text" placeholder="كم عدد الطالبات اللاتي تستطيعين متابعتهن">
                 </div>
         
                 <p class="title">بيانات تسجيل الدخول</p>
