@@ -259,8 +259,8 @@ input[type="submit"]:hover {
 /* Create a custom checkbox */
 .checkmark {
     position: absolute;
-    top: 9px;
-    left: 132px;
+    top: 118px;
+    left: 738px;
     height: 40px;
     width: 40px;
     background-color: #eee;
@@ -379,7 +379,7 @@ input[type="submit"]:hover {
 
     .dropbtn {
         font-size: 20px;
-        padding: 10px 15px;
+        padding: 15px;
     }
 
     .active.dropbtn {
@@ -483,8 +483,8 @@ input[type="submit"]:hover {
     }
 
     .checkmark {
-        top: 11px;
-        left: 71px;
+        top: 54px;
+        left: 350px;
         height: 21px;
         width: 21px;
     }
